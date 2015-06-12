@@ -41,6 +41,8 @@
                     <th>Page url</th>
                     <th>Text length</th>
                     <th>Html length</th>
+                    <th>Number of pages links</th>
+
                     <th>page links</th>
                 </tr>
 
@@ -50,6 +52,8 @@
                         <td><c:out value="${page.url}"/></td>
                         <td><c:out value="${page.textLength}"/></td>
                         <td><c:out value="${page.htmlLength}"/></td>
+                        <td><c:out value="${page.links.size()}"/></td>
+
                         <td>
                          <ul>
                              <c:if test="${not empty page.links}">
@@ -78,6 +82,8 @@
                 <th>Page url</th>
                 <th>Text length</th>
                 <th>Html length</th>
+                <th>Number of pages links</th>
+
                 <th>page links</th>
             </tr>
 
@@ -87,6 +93,8 @@
                     <td><c:out value="${page.url}"/></td>
                     <td><c:out value="${page.textLength}"/></td>
                     <td><c:out value="${page.htmlLength}"/></td>
+                    <td><c:out value="${page.links.size()}"/></td>
+
                     <td>
                         <ul>
                             <c:if test="${not empty page.links}">
