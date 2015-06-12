@@ -16,12 +16,12 @@ public class DefaultCrawlerServiceTest {
     private CrawlerServer server;
 
 
-    @Before
+//    @Before
     public void setUp() throws Exception {
         server = new DefaultCrawlerService();
     }
 
-    @Test
+//    @Test
     public void listAllLinksInTopLevelHierarchy() {
 
         String pageUrl = "http://localhost:63342/helloworld/com/webcrawler/core/topLevel.html";
@@ -37,7 +37,7 @@ public class DefaultCrawlerServiceTest {
     }
 
 
-    @Test
+//    @Test
     public void crawlDomain() {
 
         String pageUrl = "http://localhost:63342/helloworld/com/webcrawler/core/topLevel.html";
